@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  </head>
+  <body>
+ 
+    <nav id="desktop-nav">
+      <div class="logo">Amruth Krishna A</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a> </li> 
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Amruth K A</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <!-- <img style="border-radius: 50%; " src="./assets/res1.jpeg" alt="Amruth profile picture" /> -->
+        <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" alt="Amruth profile picture" />
+
+        
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Amruth K A</h1>
+        <p class="section__text__p2">Backend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume_Amruth.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/amruth-krishna-a-24a681249/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Amruth-111/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/res1.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container" onclick="location.href='https://github.com/Amruth-111/'">
+              
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1 year <br />Backend Development</p>
+            </div>
+            <div class="details-container" onclick="window.open('./assets/resume_Amruth.pdf')">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BCA Bachelors Degreee</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Results-oriented and versatile backend developer with a strong proficiency in Node.js, Express.js, NoSQL
+              and MySQL databases.Skilled in designing and implementing RESTful APIs, optimizing database
+              performance, and ensuring seamless integration between front-end and back-end systems.
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Nginx</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Redis</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+            <br>
+            <h1>Mini Projects</h1>
+            <br>
+            <ul>
+              
+              <div style="text-align:left">
+                <a href="https://amruth-111.github.io/QR-code.github.io/" style="font-size: medium; font-weight: bold; ">
+                  <h5 style ="color: blue;"><i class="fas fa-link"></i> &nbsp; https://amruth-111.github.io/QR-code.github.io/</h5></a>
+               
+              </div>
+              
+              <div style="text-align:left">
+                <a href="https://amruth-111.github.io/Weather_app.github.io/" style="font-size: medium; font-weight: bold; "> 
+                <h5 style ="color: blue;"><i class="fas fa-link"></i> &nbsp; https://amruth-111.github.io/Weather_app.github.io/</h5></i></a>
+              </div>
+           
+              <div style="text-align:left">
+                <a href="https://amruth-111.github.io/crypto_price.github.io/" style="font-size: medium; font-weight: bold; ">
+                 <h5 style ="color: blue;" ><i class="fas fa-link"></i> &nbsp; https://amruth-111.github.io/crypto_price.github.io/</h5></a>
+              </div>
+             
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container" >
+              <img style="height:150px; width:300px"
+                src="./assets/pic1exp.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <div>
+            <h2 class="experience-sub-title project-title">Expense Tracker</h2>
+            <div style="text-align: left;">
+              <h5 class="fas fa-star" >&nbsp;Technologies :Node.js, HTML, CSS, Express, MongoDB.</h5>
+              <h5 class="fas fa-star" >&nbsp;Here user can <b>ADD,DELETE,EDIT</b>their expenses.</h5>
+              <h5 class="fas fa-star" >&nbsp;Authentication and hashing using <b>JWT</b> and <b>Bcrypt.</b></h5>
+              <h5 class="fas fa-star" >&nbsp;Payment Gateway using <b>Razor Pay</b> API .</h5>
+              <h5 class="fas fa-star" >&nbsp;leaderboard feature for premium users.</h5><br>
+              <h5 class="fas fa-star" >&nbsp;Pagination done right. </h5>
+              <h5 class="fas fa-star" >&nbsp;Download Expenses feature using Amazon.<b>S3</b></h5>
+              <h5 class="fas fa-star" >&nbsp;AWS deployment using <b>RDS,EC2,Nginx.</b></h5>
+            </div>
+            
+            
+          </div>
+          <br>
+
+            <div class="btn-container">
+            
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Amruth-111/AWS-expensetracker'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/resume_Amruth.pdf')"
+                
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img style="height:150px; width:300px"
+                src="./assets/chat2.webp"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Chat-App</h2>
+            <div style="text-align: left;">
+              <h5 class="fas fa-star" >&nbsp;Technologies:Node.js, HTML, CSS, Express, MySQL.</h5>
+              <h5 class="fas fa-star" >&nbsp;Multigroup chat feature allows user to <b>create,join</b> multiple groups.</h5>
+              <h5 class="fas fa-star" >&nbsp;Authentication and hashing using <b>JWT</b> and <b>Bcrypt.</b></h5>
+              <h5 class="fas fa-star" >&nbsp;Real-time chat functionality.</h5>
+              <h5 class="fas fa-star" >&nbsp;Admin has the authority to <b>ADD ,REMOVE</b>members.</h5>
+              <h5 class="fas fa-star" >&nbsp;Real-time chat functionality using<b>SocketAPI</b></h5>
+              <h5 class="fas fa-star" >&nbsp;AWS deployment using <b>RDS,EC2,Nginx.</b></h5>
+            </div>
+            <br><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Amruth-111/chatapp'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/resume_Amruth.pdf')"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+         
+
+
+         
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img style="height:150px; width:300px"
+                src="./assets/url1.jpeg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">URL-shortener</h2>
+            <div style="text-align: left;">
+              <h5 class="fas fa-star" >&nbsp;Technologies:Node.js,MongoDB,Express</h5>
+              <h5 class="fas fa-star" >&nbsp; Convert long URLs to short, unique identifiers.</h5>
+              <h5 class="fas fa-star" >&nbsp;Track clicks, locations, sources. </h5>
+              
+              
+              <!-- <a href="https://amruth-111.github.io/Weather_app.github.io/" style="font-size: medium; font-weight: bold; ">  -->
+                <!-- <h6 style ="color: blue;"><i class="fas fa-link"></i> &nbsp; https://amruth-111.github.io/Weather_app.github.io/</h6></i></a> -->
+              
+            </div>
+            <br><br><br><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Amruth-111/url_shortener'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Amruth-111/url_shortener'"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img style="height:150px; width:300px"
+                src="./assets/ecom2.webp"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Ecommerce-Backend</h2>
+            <div style="text-align: left;">
+              <h5 class="fas fa-star" >&nbsp;Technologies:Node.js,MongoDB, Expressjs,Multer</h5>
+              <h5 class="fas fa-star" >&nbsp;Authentication and hashing using <b>JWT</b> and <b>Bcrypt.</b>.</h5>
+              <h5 class="fas fa-star" >&nbsp;Admin can add, delete, and update products and categories.</h5>
+              <h5 class="fas fa-star" >&nbsp;Implements Multer to enable easy and secure image uploads for products.</h5>
+                <h5 class="fas fa-star" >&nbsp;Users can place orders for products, facilitating seamless e-commerce transactions.</h5>
+              <br><br>
+              <!-- <a href="https://github.com/Amruth-111/e-commerce" style="font-size: medium; font-weight: bold; ">  -->
+                <!-- <h6 style ="color: blue;"><i class="fas fa-link"></i> &nbsp;https://github.com/Amruth-111/e-commerce</h6></i></a> -->
+              
+            </div>
+            
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Amruth-111/e-commerce'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Amruth-111/e-commerce'"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img style="height:150px; width:300px"
+                src="./assets/w2.webp"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Weather-App</h2>
+            <div style="text-align: left;">
+              <h5 class="fas fa-star" >&nbsp;Technologies:Node.js, HTML, CSS, JavaScript</h5>
+              <h5 class="fas fa-star" >&nbsp;Used OpenWeatherMap API.</h5>
+              <h5 class="fas fa-star" >&nbsp;Deployed on GitHub Pages for easy access and sharing.</h5>
+              <h5 class="fas fa-star" >&nbsp;Fetch API to get weather data,updating dynamic UI.</h5>
+              <br><br>
+              <a href="https://amruth-111.github.io/Weather_app.github.io/" style="font-size: medium; font-weight: bold; "> 
+                <h6 style ="color: blue;"><i class="fas fa-link"></i> &nbsp; https://amruth-111.github.io/Weather_app.github.io/</h6></i></a>
+              
+            </div>
+            <br><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Amruth-111/Weather_app.github.io.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://amruth-111.github.io/Weather_app.github.io/'"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          
+         
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img style="height:150px; width:300px"
+                src="./assets/q1.webp"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">QR-code generator</h2>
+            <div style="text-align: left;">
+              <h5 class="fas fa-star" >&nbsp;Developed a QR code generator using HTML, CSS, and JavaScript.</h5>
+              <h5 class="fas fa-star" >&nbsp;Integrated QR code generator API to create QR codes dynamically.</h5>
+              <h5 class="fas fa-star" >&nbsp;Users input text, and the app generates downloadable QR codes.</h5>
+              <h5 class="fas fa-star" >&nbsp;Hosted on GitHub Pages for easy sharing and access.</h5>
+              <br><br>  
+              <a href="https://amruth-111.github.io/QR-code.github.io/" style="font-size: medium; font-weight: s; ">
+                <h6 style ="color: blue;"><i class="fas fa-link"></i> &nbsp; https://amruth-111.github.io/QR-code.github.io/</h6></a>
+             
+            </div>
+            <br><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Amruth-111/QR-code.github.io.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://amruth-111.github.io/QR-code.github.io/'"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+         
+      <img 
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+   
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:amruthkrishnaa@gmail.com">amruthkrishnaa@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/amruth-krishna-a-24a681249/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Amruth K A. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
